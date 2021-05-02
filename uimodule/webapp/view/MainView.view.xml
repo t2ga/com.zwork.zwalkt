@@ -5,7 +5,12 @@
   <App id="idAppControl" >
     <pages>
       <Page title="{i18n>title}">
-        <content></content>
+        <content>
+          <Text text="Hello world!"/>
+          <Button
+            text="Say Hello"
+            press=".onShowHello"/>
+        </content>
       </Page>
     </pages>
   </App>
