@@ -1,6 +1,9 @@
-sap.ui.define(
-    ["sap/ui/core/UIComponent", "sap/ui/Device", "com/zwork/zwalkt/model/models"],
-    function (UIComponent, Device, models) {
+sap.ui.define([
+    "sap/ui/core/UIComponent", 
+    "sap/ui/Device", 
+    "com/zwork/zwalkt/model/models",
+    "sap/ui/model/json/JSONModel"
+], function (UIComponent, Device, models, JSONModel) {
         "use strict";
 
         return UIComponent.extend("com.zwork.zwalkt.Component", {
@@ -16,6 +19,16 @@ sap.ui.define(
             init: function () {
                 // call the base component's init function
                 UIComponent.prototype.init.apply(this, arguments);
+                var oData = {
+                    recipient: {
+                        name: "",
+                        placeholder: "Enter Name"
+                    },
+                    HTML: "<h3>Hello world!</h3>" + "<br>"
+                };
+
+                var oModel = new JSONModel(oData);
+                this.setModel(oModel);
 
                 // enable routing
                 this.getRouter().initialize();
