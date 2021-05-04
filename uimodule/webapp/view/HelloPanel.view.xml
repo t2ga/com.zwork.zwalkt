@@ -5,26 +5,31 @@
     <Panel
         headerText="{i18n>helloPanelTitle}"
         class="sapUiResponsiveMargin"
-        width="auto"
-        >
+        width="auto" >
         <content>
-        <FormattedText htmlText="{/HTML}"/>
-        <Button
-            text="{i18n>showHelloButtonText}"
-            press=".onShowHello"
-            class="myCustomButton"/>
-        <Input
-            value="{/recipient/name}"
-            valueLiveUpdate="true"
-            width="60%"
-            placeholder="{/recipient/placeholder}"
-        />
-        <FormattedText 
-            htmlText="Hello {/recipient/name}"
-            class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText" />
-        <Text
-            text="Hello {/recipient/name}"
-            class="sapUiSmallMargin"/>
+            <Button
+                id="helloDialogButton"
+                icon="sap-icon://world"
+                text="{i18n>openDialogButtonText}"
+                press=".onOpenDialog"
+                class="sapUiSmallMarginEnd"/>
+            <Button
+                id="showHelloTextButton"
+                text="{i18n>showHelloButtonText}"
+                press=".onShowHello"
+                class="myCustomButton"/>
+            <Input
+                value="{/recipient/name}"
+                valueLiveUpdate="true"
+                width="60%"
+                placeholder="{/recipient/placeholder}"
+            />
+            <FormattedText 
+                htmlText="Hello {/recipient/name}"
+                class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText" />
+            <Text
+                text="Hello {/recipient/name}"
+                class="sapUiSmallMargin"/>
         </content>
     </Panel>
 </mvc:View>

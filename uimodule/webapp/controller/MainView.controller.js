@@ -20,6 +20,10 @@ sap.ui.define([
             // //set i18n model on view
             // // var i18nModel = new ResourceModel({bundleName: "com.zwork.zwalkt.i18n.i18n"});
 
+        },
+
+        onOpenDialog : function() {
+            this.getOwnerComponent().openHelloDialog();
         }
     });
 });
