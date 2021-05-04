@@ -22,7 +22,7 @@ sap.ui.define([
                 var oData = {
                     recipient: {
                         name: "",
-                        placeholder: "Enter Name"
+                        placeholder: "{i18n>homePageTitle}"//"Enter Name"
                     },
                     HTML: "<h3>Hello world!</h3>" + "<br>"
                 };

@@ -2,24 +2,15 @@
   displayBlock="true"
   xmlns="sap.m"
   xmlns:mvc="sap.ui.core.mvc">
-  <App id="idAppControl" >
-    <pages>
-      <Page title="{i18n>title}">
-        <content>
-          <FormattedText htmlText="{/HTML}"/>
-          <Button
-            text="{i18n>showHelloButtonText}"
-            press=".onShowHello"/>
-          <Input
-            value="{/recipient/name}"
-            description="Hello {/recipient/name}"
-            valueLiveUpdate="true"
-            width="60%"
-            placeholder="{/recipient/placeholder}"
-          />
-          <FormattedText htmlText="{/recipient/name}"/>
-        </content>
-      </Page>
-    </pages>
-  </App>
+  <Shell>
+    <App id="idAppControl" class="myAppDemoWT">
+      <pages>
+        <Page title="{i18n>homePageTitle}">
+          <content>
+            <mvc:XMLView viewName="com.zwork.zwalkt.view.HelloPanel"/>
+          </content>
+        </Page>
+      </pages>
+    </App>
+  </Shell>
 </mvc:View>
