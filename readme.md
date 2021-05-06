@@ -5,8 +5,9 @@ the project of [walkthrough](https://sapui5.hana.ondemand.com/#/topic/3da5f4be63
 ## To study
 Links with information that have to be reviewed!
 1. [List & ObjectListItem](https://experience.sap.com/fiori-design-web/object-list-item/)
+1. [Step25](https://sapui5.hana.ondemand.com/#/topic/c4b2a32bb72f483faa173e890e48d812) *Q:* How to sort items inside groups?
 
-
+***
 Insert the purpose of this project and some interesting infos here
 
 > Create your first UI5 App within a few seconds!

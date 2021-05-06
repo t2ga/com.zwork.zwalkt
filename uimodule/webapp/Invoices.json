@@ -39,6 +39,14 @@
         "ShipperName": "Fun Inc.",
         "ShippedDate": "2015-01-27T00:00:00",
         "Status": "A"
+      },
+      {
+        "ProductName": "Apfel Saft",
+        "Quantity": 1,
+        "ExtendedPrice": 0.71215,
+        "ShipperName": "Fun Inc.",
+        "ShippedDate": "2015-01-28T00:00:00",
+        "Status": "A"
       }
     ]
   }

@@ -13,7 +13,7 @@ sap.ui.define([
 
 		onInit : function () {
 			var oViewModel = new JSONModel({
-				currency: "JPY" //"EUR"
+				currency: "EUR" //"JPY"
 			});
 			this.getView().setModel(oViewModel, "view");
 		},
@@ -30,7 +30,7 @@ sap.ui.define([
 			//If the query is not empty, we add a new filter object to the still empty array of filters. 
 			// However, if the query is empty, we filter the binding with an empty array. 
 			// This makes sure that we see all list elements again.
-			
+
 			var oList = this.byId("invoiceList"); //list on the view 'InvoiceList'
 			var oBinding = oList.getBinding("items");
 			oBinding.filter(aFilter);
