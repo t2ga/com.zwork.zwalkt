@@ -6,6 +6,12 @@ the project of [walkthrough](https://sapui5.hana.ondemand.com/#/topic/3da5f4be63
 Links with information that have to be reviewed!
 1. [List & ObjectListItem](https://experience.sap.com/fiori-design-web/object-list-item/)
 1. [Step25](https://sapui5.hana.ondemand.com/#/topic/c4b2a32bb72f483faa173e890e48d812) *Q:* How to sort items inside groups?
+1. Proxy to redirect requests, provide access to OData resource on the other host [npm package](https://www.npmjs.com/package/ui5-middleware-simpleproxy)
+ 
+
+
+
+
 
 ***
 Insert the purpose of this project and some interesting infos here
