@@ -21,3 +21,14 @@ server:
       configuration:
         port: 35729
         path: uimodule/webapp
+    - name: odataProxy
+      beforeMiddleware: serveResources
+---
+# Custom middleware extension as part of the project
+specVersion: "2.2"
+kind: extension
+type: server-middleware
+metadata:
+  name: odataProxy
+middleware:
+  path: lib/middleware/odataProxy.js

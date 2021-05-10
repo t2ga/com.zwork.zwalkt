@@ -2,6 +2,9 @@
 
 the project of [walkthrough](https://sapui5.hana.ondemand.com/#/topic/3da5f4be63264db99f2e5b04c5e853db) tutorial.
 
+added a proxy server for support OData
+
+
 ## To study
 Links with information that have to be reviewed!
 1. [List & ObjectListItem](https://experience.sap.com/fiori-design-web/object-list-item/)
