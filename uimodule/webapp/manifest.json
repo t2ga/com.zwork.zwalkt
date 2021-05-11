@@ -94,9 +94,19 @@
       },
       "routes": [
         {
+          "pattern": "",
+          "name": "overview",
+          "target": "overview"
+        },
+        {
           "name": "RouteMainView",
           "pattern": "RouteMainView",
           "target": ["TargetMainView"]
+        },
+        {
+          "pattern": "detail",
+          "name": "detail",
+          "target": "detail"
         }
       ],
       "targets": {
@@ -105,6 +115,14 @@
           "viewLevel": 1,
           "viewId": "idAppControl",
           "viewName": "MainView"
+        },
+        "overview": {
+          "viewId": "overview",
+          "viewName": "Overview"
+        },
+        "detail": {
+          "viewId": "detail",
+          "viewName": "Detail"
         }
       }
     }

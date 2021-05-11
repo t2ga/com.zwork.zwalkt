@@ -34,6 +34,11 @@ sap.ui.define([
 			var oList = this.byId("invoiceList"); //list on the view 'InvoiceList'
 			var oBinding = oList.getBinding("items");
 			oBinding.filter(aFilter);
+		},
+
+		onPress: function (oEvent) {
+			var oRouter = this.getOwnerComponent().getRouter();
+			oRouter.navTo("detail"); // a target from manifest.json
 		}
 
 	});

@@ -32,6 +32,7 @@ sap.ui.define([
                 this.setModel(oModel);
 
                 // enable routing
+                // create the views based on the url/hash
                 this.getRouter().initialize();
 
                 // set the device model
